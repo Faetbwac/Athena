@@ -1,0 +1,47 @@
+# Aegis Configuration
+# ==============
+
+# Output Configuration
+output_dir: "./notes"  # Default notes output directory
+
+# Image Format (supports configuration)
+# Variables: {platform}, {id}, {filename}
+image_format: "./images/{platform}/{id}/{filename}"
+
+# Routing Configuration
+routing:
+  videos: "./notes/videos"      # BiliBili videos
+  articles: "./notes/articles" # Zhihu/Juejin/CSDN articles
+  questions: "./notes/questions" # Zhihu questions
+
+# AI Configuration
+ai:
+  enabled: false  # Set to true to enable AI features
+  backend: "openai"  # openai, traef, local
+  api_key: ""  # Set your API key
+  model: "gpt-4"  # Model name
+
+# Platform Credentials (encrypted storage)
+# Note: Store sensitive data securely
+credentials:
+  bilibili:
+    cookie: ""
+  zhihu:
+    cookie: ""
+  juejin:
+    cookie: ""
+
+# Git Configuration
+git:
+  auto_commit: true
+  remote: ""  # e.g., https://github.com/user/repo.git
+  commit_message: "Aegis: collected {count} items"
+
+# Processing Options
+processing:
+  comment_depth: "all"  # all, hot, or number (e.g., 10)
+  batch_size: 10  # Items per batch
+  continue_on_error: true
+
+# Database
+db_path: "./aegis.db"

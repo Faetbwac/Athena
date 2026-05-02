@@ -16,10 +16,10 @@
 
 **目的**: 项目初始化和基础结构
 
-- [ ] T001 在 `Athena/Aegis/` 下创建项目结构
-- [ ] T002 [P] 初始化 Python 项目（setup.py/pyproject.toml）
-- [ ] T003 [P] 配置依赖（fastapi、uvicorn、sqlalchemy、pyyaml、requests）
-- [ ] T004 在 `Athena/Aegis/` 下创建 `__init__.py`
+- [X] T001 在 `Athena/Aegis/` 下创建项目结构
+- [X] T002 [P] 初始化 Python 项目（setup.py/pyproject.toml）
+- [X] T003 [P] 配置依赖（fastapi、uvicorn、sqlalchemy、pyyaml、requests）
+- [X] T004 在 `Athena/Aegis/` 下创建 `__init__.py`
 
 ---
 
@@ -29,12 +29,12 @@
 
 **关键**: 在此阶段完成之前，无法开始任何用户故事工作
 
-- [ ] T005 创建 `Athena/Aegis/config.yaml` 配置文件（空模板）
-- [ ] T006 [P] [US1] 在 `Athena/Aegis/core/config.py` 中实现配置加载模块
-- [ ] T007 [P] [US1] 在 `Athena/Aegis/core/config.py` 中实现配置验证
-- [ ] T008 创建 SQLite 数据库模型（处理清单表）
-- [ ] T009 在 `Athena/Aegis/db/models.py` 中定义 CollectionItem 实体
-- [ ] T010 在 `Athena/Aegis/db/models.py` 中定义状态枚举
+- [X] T005 创建 `Athena/Aegis/config.yaml` 配置文件（空模板）
+- [X] T006 [P] [US1] 在 `Athena/Aegis/core/config.py` 中实现配置加载模块
+- [X] T007 [P] [US1] 在 `Athena/Aegis/core/config.py` 中实现配置验证
+- [X] T008 创建 SQLite 数据库模型（处理清单表）
+- [X] T009 在 `Athena/Aegis/db/models.py` 中定义 CollectionItem 实体
+- [X] T010 在 `Athena/Aegis/db/models.py` 中定义状态枚举
 
 **检查点**: 基础就绪 - 现在可以开始并行实施用户故事
 
@@ -48,16 +48,16 @@
 
 ### 用户故事 1 的测试（先编写）⚠️
 
-**注意**: 先编写这些测试，确保在实施前它们失败
+**注意**: 先编写这些测试确保在实施前它们失败
 
-- [ ] T011 [P] [US1] 在 `tests/unit/test_config.py` 中编写配置加载测试
-- [ ] T012 [P] [US1] 在 `tests/unit/test_config.py` 中编写配置验证测试
+- [X] T011 [P] [US1] 在 `tests/unit/test_config.py` 中编写配置加载测试
+- [X] T012 [P] [US1] 在 `tests/unit/test_config.py` 中编写配置验证测试
 
 ### 用户故事 1 的实施
 
-- [ ] T013 [US1] 在 `Athena/Aegis/core/config.py` 中实现 YAML 配置加载
-- [ ] T014 [US1] 在 `Athena/Aegis/core/config.py` 中实现配置验证逻辑
-- [ ] T015 [US1] 在 `Athena/Aegis/core/config.py` 中实现默认值处理
+- [X] T013 [US1] 在 `Athena/Aegis/core/config.py` 中实现 YAML 配置加载
+- [X] T014 [US1] 在 `Athena/Aegis/core/config.py` 中实现配置验证逻辑
+- [X] T015 [US1] 在 `Athena/Aegis/core/config.py` 中实现默认值处理
 - [ ] T016 [US1] 在 `Athena/Aegis/api/config.py` 中实现 GET /config 端点
 
 **检查点**: 此时，用户故事 1 应该完全功能化且可独立测试
